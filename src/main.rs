@@ -1,13 +1,9 @@
-fn greet_world() {
-    let southern_germany = "Grüß Gott!";
-    let chinese = "世界，你好";
-    let english = "World, hello";
-    let regions = [southern_germany, chinese, english];
-    for region in regions.iter() {
-        println!("{}", &region);
-    }
-}
+use num::complex::Complex;
 
 fn main() {
-    greet_world();
+    let a = Complex { re: 2.1, im: -1.2 };
+    let b = Complex::new(11.1, 22.2);
+    let result = a + b;
+
+    println!("{} + {}i", result.re, result.im)
 }

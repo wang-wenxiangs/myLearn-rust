@@ -1,7 +1,7 @@
 [source.crates-io]
 registry = "https://github.com/rust-lang/crates.io-index"
 # 这时换成自己偏好的源即可
-replace-with = 'rustcc'
+replace-with = 'tuna'
 
 # 中国科技大学
 [source.ustc]
@@ -18,3 +18,7 @@ registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
 # rustcc社区
 [source.rustcc]
 registry = "git://crates.rustcc.cn/crates.io-index"
+
+
+[dependencies]
+num = "0.4.0"
